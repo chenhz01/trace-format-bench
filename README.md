@@ -2,6 +2,8 @@
 
 **Stop feeding raw log files to your LLM.** Convert once to a compact binary IR, then derive tiny analyzer views. You need this if AI agents regularly re-read multi-MB structured logs.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 Agents that debug or audit systems burn tokens re-reading the same raw logs on every step, and the raw text is mostly redundancy: repeated field names, repeated templates, wall-clock strings. The insight this repo borrows comes from debugger architecture — RAD Debugger ([EpicGames/raddebugger](https://github.com/EpicGames/raddebugger)) stopped parsing PDB/DWARF every run and instead converts debug info **once** into its own compact RDI intermediate representation, trading a one-time conversion for repeated fast access.
