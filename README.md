@@ -1,3 +1,13 @@
+
+> [!NOTE]
+> **This tool is now part of [zhengming-toolbox](https://github.com/chenhz01/zhengming-toolbox)** &mdash; one install, one CLI for all offline checks:
+>
+> ```bash
+> pip install git+https://github.com/chenhz01/zhengming-toolbox.git
+> zmt list        # see every tool
+> ```
+>
+> This repository is kept as provenance; the code below is unchanged. <!-- zhengming-toolbox-consolidation-notice -->
 # trace-format-bench
 
 **Stop feeding raw log files to your LLM.** Convert once to a compact binary IR, then derive tiny analyzer views. You need this if AI agents regularly re-read multi-MB structured logs.
